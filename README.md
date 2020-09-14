@@ -24,11 +24,9 @@ keycloak:
 and in your theme file you should add this piece of code in your `login.ftl` template file:
 ```
 <#if recaptchaRequired??>
-<div class="form-group">
-	<div class="${properties.kcInputWrapperClass!}">
-		<div class="g-recaptcha" data-size="compact" data-sitekey="${recaptchaSiteKey}">			
-		</div>
-	</div>
+<div class="${properties.kcFormGroupClass!}">
+    <div class="g-recaptcha" data-sitekey="${recaptchaSiteKey}">			
+    </div>
 </div>
 </#if>
 ```
@@ -36,3 +34,6 @@ you should past it inside your login `<form></form>` in your login template (`lo
 
 And finally you should enable external origin `https://google.com` like the way in keycloak's  [Recaptcha Documentation](https://www.keycloak.org/docs/latest/server_admin/index.html#_recaptcha) mentioned.
 
+# How off the Keycloak theme cache
+
+[Off theme cache](https://keycloakthemes.com/blog/how-to-turn-off-the-keycloak-theme-cache)
