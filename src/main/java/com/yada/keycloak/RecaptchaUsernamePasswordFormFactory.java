@@ -1,21 +1,19 @@
-package org.keycloak.marjaa.providers.login.recaptcha.authenticator;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.yada.keycloak;
 
 import org.keycloak.Config;
 import org.keycloak.OAuth2Constants;
 import org.keycloak.authentication.Authenticator;
 import org.keycloak.authentication.AuthenticatorFactory;
 import org.keycloak.authentication.DisplayTypeAuthenticatorFactory;
-import org.keycloak.authentication.authenticators.browser.UsernamePasswordForm;
-import org.keycloak.authentication.authenticators.browser.UsernamePasswordFormFactory;
 import org.keycloak.authentication.authenticators.console.ConsoleUsernamePasswordAuthenticator;
 import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.models.UserCredentialModel;
 import org.keycloak.provider.ProviderConfigProperty;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RecaptchaUsernamePasswordFormFactory  implements AuthenticatorFactory, DisplayTypeAuthenticatorFactory {
 

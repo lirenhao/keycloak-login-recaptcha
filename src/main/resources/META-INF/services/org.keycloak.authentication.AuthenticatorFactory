@@ -15,4 +15,4 @@
 # limitations under the License.
 #
 
-org.keycloak.marjaa.providers.login.recaptcha.authenticator.RecaptchaUsernamePasswordFormFactory
+com.yada.keycloak.RecaptchaUsernamePasswordFormFactory
