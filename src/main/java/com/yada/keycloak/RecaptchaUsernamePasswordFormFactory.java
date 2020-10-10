@@ -98,6 +98,36 @@ public class RecaptchaUsernamePasswordFormFactory  implements AuthenticatorFacto
 		property.setHelpText("Google Recaptcha Secret");
 		CONFIG_PROPERTIES.add(property);
 
+        property = new ProviderConfigProperty();
+        property.setName(RecaptchaUsernamePasswordForm.PROXY_HOST);
+        property.setLabel("Recaptcha Proxy Host");
+        property.setType(ProviderConfigProperty.STRING_TYPE);
+        property.setHelpText("Google Recaptcha Proxy Host");
+        CONFIG_PROPERTIES.add(property);
+
+        property = new ProviderConfigProperty();
+        property.setName(RecaptchaUsernamePasswordForm.PROXY_PORT);
+        property.setDefaultValue(80);
+        property.setLabel("Recaptcha Proxy Port");
+        property.setType(ProviderConfigProperty.STRING_TYPE);
+        property.setHelpText("Google Recaptcha Proxy Port");
+        CONFIG_PROPERTIES.add(property);
+
+        property = new ProviderConfigProperty();
+        property.setName(RecaptchaUsernamePasswordForm.API_URI);
+        property.setDefaultValue("https://www.google.com/recaptcha/api.js?hl=");
+        property.setLabel("Recaptcha Api Url");
+        property.setType(ProviderConfigProperty.STRING_TYPE);
+        property.setHelpText("Google Recaptcha Api Url");
+        CONFIG_PROPERTIES.add(property);
+
+        property = new ProviderConfigProperty();
+        property.setName(RecaptchaUsernamePasswordForm.VERIFY_URL);
+        property.setDefaultValue("https://www.google.com/recaptcha/api/siteverify");
+        property.setLabel("Recaptcha Verify Url");
+        property.setType(ProviderConfigProperty.STRING_TYPE);
+        property.setHelpText("Google Recaptcha Verify Url");
+        CONFIG_PROPERTIES.add(property);
 	}
 
 	@Override
